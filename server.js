@@ -15,10 +15,15 @@ app.get('/elliott-hulse-transformation', function(req, res){
     res.render('transformation');
 })
 
-app.get('/my-experience', function(req, res){
+app.get('/experience', function(req, res){
     res.render('experience');
+})
+
+app.get('/relevant-courses', function (req, res){
+    res.render('courses');
 })
 
 app.listen(3000, function(){
     console.log("Listening on port 3000");
 })
+

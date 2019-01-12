@@ -41,3 +41,7 @@ body {
 	font-size: 36px;
 	margin-left: 50px;
   }
+
+  .letters_spaced {
+      letter-spacing: 2.5px;
+  }

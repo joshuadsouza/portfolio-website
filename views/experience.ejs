@@ -16,7 +16,7 @@
 
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav class="navbar fixed-top navbar-light bg-light">
         <button class="navbar-toggler" type="button" id="sideNavButton" onclick="openNav()">
             <span style="font-size:30px;">&#9776;</span>
         </button>
@@ -25,6 +25,7 @@
         <div id="mySideNav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/">Home</a>
+            <a href="/experience">Experience</a>
             <a href="#">Resume</a>
             <a href="#">Contact Me</a>
         </div>    
@@ -33,7 +34,7 @@
 
     <!-- Title Section -->
     <div class="container">
-        <div class="row">
+        <div class="row mt-5">
             <div class="col p-5">
                 <h1 class="display-1 text-center">Experience</h1>
                 <h1 class="display-4 text-center">The Main Course</h1>
@@ -44,8 +45,8 @@
     <!-- End of title section-->
 
     <!-- FastApps Experience -->
-    <div class="container pb-5">
-        <div class="row">
+    <div class="container pb-5" id="fastapps">
+        <div class="row align-items-center">
             <div class="col-sm">
                 <div id="carouselExampleControls" class="carousel slide border border-dark" data-ride="carousel">
                     <div class="carousel-inner">
@@ -69,7 +70,7 @@
                     </a>
                     </div>
             </div>
-            <div class="col-sm pt-5">
+            <div class="col-sm pt-3">
                 <i class="fas fa-rocket fa-2x d-inline p-2"></i>
                 <h2 class="d-inline">crystal ball investor</h2>
                 <h3 class="pt-3 pb-3">Software Developer - FastApps</h3> 
@@ -89,17 +90,114 @@
     <!-- End of FastApps Section -->
 
     <!-- Loblaw Digital Section -->
-    <div class="container pt-5">
-        <div class="row">
+    <div class="container pt-5 pb-5" id="loblaw-digital">
+        <div class="row align-items-center">
             <div class="col-sm">
-                <img class="d-block w-100" src="/images/loblaw-digital.jpg" alt="Third slide">
+                <img class="d-block w-100" src="/images/loblaw-digital.jpg" alt="Loblaw Digital">
             </div>
-            <div class="col-sm">
+            <div class="col-sm pt-3">
+                <i class="fas fa-bullhorn fa-2x d-inline p-2"></i>
+                <h2 class="d-inline">attracting people</h2>
+                <h3 class="pt-3 pb-3">Demand Generation Specialist - Loblaw Digital</h3> 
+                <p class="lead">Implemented the XGBoost machine learning model using Python to predict sales in a time series approach to enhance quarterly forecasts.</p>
+                <br>
+                <p class="lead">Built a GUI using JAVA Swing to check for duplicate keywords in paid search accounts via Google AdWords API to prevent internal bidding.</p>
+                <br>
+                <p class="lead">Analyzed customer profiles to develop marketing strategies that adhered to a testing framework.</p>
+            </div>
+        </div>
+    </div>
+    <!-- End of Loblaw Digital Section -->
 
+    <!-- Tanzanite Section -->
+    <div class="container pt-5 pb-5" id="tanzanite">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <img class="d-block w-100" src="/images/tanzanite.png" alt="Tanzanite 2019">
+            </div>
+            <div class="col-sm pt-3">
+                <i class="fas fa-child fa-2x d-inline p-2"></i>
+                <h2 class="d-inline">aspiring mandela</h2>
+                <h3 class="pt-3 pb-3">Tanzanite 2019 President</h3> 
+                <p class="lead">President of Tanzanite Toronto, a non-profit organization founded in 1983 that promotes Tanzanian culture across the GTA.</p>
+                <br>
+                <p class="lead">Currently leading a team of 12 individuals to plan and execute several events for the community throughout the year.</p>
+                <br>
+                <p class="lead">Designed the website with Adobe XD and built it with jQuery, Javascript, HTML, and Bootstrap.</p>
+                <br>
+                <p class="lead">Adhere to a test-driven decision-making environment.</p>
+                <a class="btn btn-primary" href="https://tanzanite2019.com" role="button" target="_blank">View the Site</a>
             </div>
         </div>
     </div>
 
+    <!-- End of Tanzanite Section -->
+
+    <!-- Industry Section -->
+    <div class="container pt-5 pb-5" id="industry">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <img class="d-block w-100" src="/images/industry.png" alt="Industry 4.0">
+            </div>
+            <div class="col-sm pt-3">
+                <i class="fas fa-code fa-2x d-inline p-2"></i>
+                <h2 class="d-inline">code for yute</h2>
+                <h3 class="pt-3 pb-3">Full Stack Developer - Industry 4.0</h3> 
+                <p class="lead">Full-stack developer for the Industry 4.0 team in pursuit of promoting Management Engineering across Canadian high-schools.</p>
+                <br>
+                <p class="lead">Constructed a reusable wireframe and visual design for the website with Adobe XD.</p>
+                <br>
+                <p class="lead">Collaborated with two other developers to build version one of the website with Javascript, HTML, and Bootstrap.</p>
+                <p class="lead">Website was launched through an Amazon S3 Bucket.</p>
+                <a class="btn btn-primary" href="http://www.i4competition.ca/" role="button" target="_blank">View the Site</a>
+            </div>
+        </div>  
+    </div>
+    <!-- End of Industry Section -->
+
+    <!-- Reinspire Section -->
+    <div class="container pt-5 pb-5" id="matter-marketing">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <img class="d-block w-100" src="/images/matter_marketing.png" alt="Industry 4.0">
+            </div>
+            <div class="col-sm pt-3">
+                <i class="fas fa-user-friends fa-2x d-inline p-2"></i>
+                <h2 class="d-inline">safari promoter</h2>
+                <h3 class="pt-3 pb-3">Founder - Matter Marketing</h3>
+                <p class="lead">Operated Matter Marketing from May 2017 to Decemeber 2017</p>
+                <br>
+                <p class="lead">Matter Marketing was a marketing agency that aimed to improve and increase brand awareness.</p>
+                <br>
+                <p class="lead">Conducted search campaigns using Google AdWords, scheduled marketing campagins via Facebook/Instagram Ads, and e-mail campaigns with MailChimp.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End of Reinspire Section -->
+
+    <!-- Two Kids for Change Section -->
+    <div class="container pt-5 pb-5" id="two-kids-for-change">
+        <div class="row align-items-center">
+            <div class="col-sm">
+                <img class="d-block w-100" src="/images/kids_for_change.jpeg" alt="Loblaw Digital">
+            </div>
+            <div class="col-sm pt-3">
+                <i class="fas fa-code fa-2x d-inline p-2"></i>
+                <h2 class="d-inline">code for change</h2>
+                <h3 class="pt-3 pb-3">Full Stack Developer - Two Kids for Change</h3> 
+                <p class="lead">Two Kids for Change is a charity to help the Mississauga community by providing grovery gift cards to families in need.</p>
+                <br>
+                <p class="lead">Currently collaborating with one of the founders in order to build an updated version of the site with Javascript, and HTML.</p>
+                <br>
+                <p class="lead">Hosting the static version of the site in an Amazon S3 bucket, but will switch to an Amazon Ec2 in the near future for tehcnical purposes.</p>
+                <a class="btn btn-primary" href="http://twokidsforchange.com.s3-website.ca-central-1.amazonaws.com/" role="button" target="_blank">View Site in Progress</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Two Kids for Change Section -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
