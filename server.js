@@ -40,7 +40,7 @@ app.post('/contact-me', async function(req, res){
         email_address: req.body.email,
         message: req.body.message
     }
-    complete = JSON.stringify(data);
+    var complete = JSON.stringify(data);
     var mailOptions = {
         from: req.body.email,
         to: process.env.EMAIL,
@@ -54,8 +54,39 @@ app.post('/contact-me', async function(req, res){
 })
 
 app.get('/resume', function(req, res){
-    var file = __dirname + '/public/joshua_dsouza_resume.pdf'
-    res.download(file);
+    //var file = __dirname + '/public/joshua_dsouza_resume.pdf'
+    //res.download(file);
+    res.render('resume');
+})
+
+app.post('/resume', async function(req, res){
+    var transporter = await mailer.construct_transporter();
+    var data = {
+        name: req.body.person_name,
+        email: req.body.email,
+        phone: req.body.phone_number,
+        company: req.body.company_name
+    }
+    var complete = JSON.stringify(data);
+    var mailOptions = {
+        from: process.env.EMAIL,
+        to: req.body.email,
+        subject: "Joshua D'Souza Resume",
+        text: "Thanks for the interest! Attached is a PDF version of my resume.",
+        attachments: [{
+            filename: 'joshua_dsouza_resume.pdf',
+            path: __dirname + '/public/joshua_dsouza_resume.pdf',
+            contentType: 'application/pdf'
+        }], function (err, info){
+            if(err){
+                console.log(err);
+            } else{
+                console.log(info);
+            }
+        }
+    }
+    await mailer.send_email(transporter, mailOptions);
+    res.json(req.body.email);
 })
 
 app.listen(3000, function(){
