@@ -68,6 +68,7 @@ app.post('/resume', async function(req, res){
         company: req.body.company_name
     }
     var complete = JSON.stringify(data);
+    require('./resume_log.js');
     var mailOptions = {
         from: process.env.EMAIL,
         to: req.body.email,

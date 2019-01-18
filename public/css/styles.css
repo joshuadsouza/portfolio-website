@@ -3,8 +3,8 @@ body {
 }
 
 @media (max-width: 544px) {  
-    html {
-        font-size:0.8rem;
+    html{
+        font-size: 0.9rem;
     }
 }
 

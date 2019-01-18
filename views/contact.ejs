@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132319478-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-132319478-1');
+    </script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,11 +46,20 @@
     <!-- END NAVBAR -->
 
     <!-- Title Section -->
-    <div class="container">
+    <div class="container d-none d-md-block">
         <div class="row mt-5">
             <div class="col p-5">
                 <h1 class="display-1 text-center">Contact Me</h1>
                 <h4 class="text-center">Fill out the form below to get in touch!</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-md-none">
+        <div class="row mt-5">
+            <div class="col p-5">
+                <h1 class="display-4 text-center">Contact Me</h1>
+                <h4 class="text-center">Fill out the form below to get in touch!</h1>
             </div>
         </div>
     </div>
